@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 API-k</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>HTML5 API-k példák</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Kezdőlap</a></li>
+      <li><a href="tabla.html">Táblázat</a></li>
+      <li><a href="html5.html" class="active">HTML5</a></li>
+      <li><a href="chartjs.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>HTML5 API-k</h2>
+
+    <h3>1. Web Storage API</h3>
+    <button onclick="storeData()">Adatok mentése LocalStorage-be</button>
+    <button onclick="retrieveData()">Adatok betöltése</button>
+    <p id="localStorageData"></p>
+
+    <h3>2. Geolocation API</h3>
+    <button onclick="getLocation()">Pozíció lekérése</button>
+    <p id="geoLocation"></p>
+
+    <h3>3. Drag and Drop API</h3>
+    <div id="dragSource" draggable="true" ondragstart="drag(event)" style="width: 150px; height: 150px; background: lightcoral; text-align: center; line-height: 150px; margin: 10px;">
+      Húzz engem!
+    </div>
+    <div id="dropZone" ondrop="drop(event)" ondragover="allowDrop(event)" style="width: 200px; height: 200px; border: 2px dashed #ccc;">
+      Ejtsd ide!
+    </div>
+
+    <h3>4. Canvas API</h3>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <button onclick="drawCanvas()">Rajzolás</button>
+
+    <h3>5. SVG API</h3>
+    <svg height="150" width="400">
+        <circle cx="200" cy="70" r="50" stroke="black" stroke-width="3" fill="yellow" />
+    </svg>
+  </main>
+
+  <footer>
+    <p>Készítők: Forgács Gábor Péter (E7VH8G), Tóka Dániel (majdobeirja)</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Táblázat CRUD</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Web-programozás-1 Előadás Házi feladat - Táblázat</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Kezdőlap</a></li>
+      <li><a href="tabla.html" class="active">Táblázat</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="chartjs.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>Felhasználói adatok</h2>
+
+    <input type="text" id="searchInput" placeholder="Keresés név alapján..." onkeyup="searchTable()">
+    <button onclick="createRow()">Új sor hozzáadása</button>
+    
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Név</th>
+          <th onclick="sortTable(1)">Magasság</th>
+          <th onclick="sortTable(2)">Súly</th>
+          <th>Műveletek</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Táblázat sorok ide jönnek -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>Készítők: Forgács Gábor Péter (E7VH8G), Tóka Dániel (majdobeirja)</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

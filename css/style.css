@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    flex: 1;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  nav ul li a.active,
+  nav ul li a:hover {
+    background-color: #666;
+  }
+  
+  aside {
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  footer {
+    font-size: 0.9em;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  #dragSource {
+    cursor: move;
+  }
+  
+  #dropZone {
+    border-color: #4CAF50;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  canvas {
+    display: block;
+    margin: 20px auto;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  form {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  input {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  button {
+    margin-left: 5px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  li button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+  }
+  
+  li button:hover {
+    background-color: darkred;
+  }

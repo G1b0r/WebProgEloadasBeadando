@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Chart.js - Adatok ábrázolása</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Chart.js - Adatok ábrázolása vonaldiagramon</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Kezdőlap</a></li>
+      <li><a href="tabla.html">Táblázat</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="chartjs.html" class="active">Chart.js</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>Táblázat és Diagram</h2>
+    <p>Válassz ki egy sort, és nézd meg a vonaldiagramot!</p>
+
+    <!-- Táblázat a véletlenszerű számokkal -->
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Adat 1</th>
+          <th>Adat 2</th>
+          <th>Adat 3</th>
+          <th>Adat 4</th>
+          <th>Adat 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Táblázat sorok generálása JavaScript-tel -->
+      </tbody>
+    </table>
+
+    <h3>Vonaldiagram:</h3>
+    <canvas id="lineChart"></canvas>
+  </main>
+
+  <footer>
+    <p>Készítők: Forgács Gábor Péter (E7VH8G), Tóka Dániel (majdobeirja)</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

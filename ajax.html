@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Műveletek</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>AJAX Műveletek</h1>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="index.html" class="active">Kezdőlap</a></li>
+        <li><a href="tabla.html">Táblázat</a></li>
+        <li><a href="html5.html">HTML5</a></li>
+        <li><a href="chartjs.html">ChartJS</a></li>
+        <li><a href="ajax.html">AJAX</a></li>
+        <li><a href="oojs.html">OOJS</a></li>
+      </ul>
+  </nav>
+
+  <main>
+    <h2>CRUD Műveletek az API-val</h2>
+    
+    <!-- Táblázat a lekérdezett adatokkal -->
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Neve</th>
+          <th>Magasság</th>
+          <th>Súly</th>
+          <th>Műveletek</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Adatok dinamikusan kerülnek ide -->
+      </tbody>
+    </table>
+
+    <!-- Create (Új adat felvitele) -->
+    <h3>Új adat hozzáadása</h3>
+    <form id="createForm">
+      <input type="text" id="name" placeholder="Név" required>
+      <input type="number" id="height" placeholder="Magasság" required>
+      <input type="number" id="weight" placeholder="Súly" required>
+      <button type="submit">Hozzáadás</button>
+    </form>
+
+    <!-- Update (Adat módosítása) -->
+    <h3>Adat módosítása</h3>
+    <form id="updateForm">
+      <input type="text" id="updateId" placeholder="ID" required>
+      <input type="text" id="updateName" placeholder="Új Név" required>
+      <input type="number" id="updateHeight" placeholder="Új Magasság" required>
+      <input type="number" id="updateWeight" placeholder="Új Súly" required>
+      <button type="submit">Módosítás</button>
+    </form>
+
+    <!-- Törlés -->
+    <h3>Törlés</h3>
+    <form id="deleteForm">
+      <input type="text" id="deleteId" placeholder="ID" required>
+      <button type="submit">Törlés</button>
+    </form>
+
+    <div id="responseMessage"></div>
+  </main>
+
+  <footer>
+    <p>Forgács Gábor Péter (E7VH8G), Tóka Dániel (majdobeirja)</p>
+  </footer>
+</body>
+</html>
