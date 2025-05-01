@@ -48,29 +48,8 @@ body {
   footer {
     font-size: 0.9em;
   }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table, th, td {
-    border: 1px solid black;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
   
   th {
-    cursor: pointer;
-  }
-  
-  button {
-    padding: 5px 10px;
-    margin: 5px;
     cursor: pointer;
   }
 
@@ -80,25 +59,6 @@ body {
   
   #dropZone {
     border-color: #4CAF50;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
   }
   
   th {
@@ -115,9 +75,6 @@ body {
     margin: 20px auto;
   }
 
-  body {
-    font-family: Arial, sans-serif;
-  }
   
   h1, h2 {
     text-align: center;
@@ -135,9 +92,6 @@ body {
     padding: 5px;
   }
   
-  button {
-    padding: 5px 10px;
-  }
   
   table {
     width: 100%;
@@ -152,10 +106,7 @@ body {
     padding: 10px;
     text-align: center;
   }
-  
-  button {
-    margin-left: 5px;
-  }
+
 
   body {
     font-family: Arial, sans-serif;
@@ -178,7 +129,7 @@ body {
     padding: 10px;
     width: 300px;
   }
-  
+    
   button {
     padding: 10px;
     background-color: #4CAF50;
