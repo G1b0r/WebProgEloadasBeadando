@@ -4,7 +4,6 @@ let data = [
     { name: "Nagy Béla", height: 175, weight: 80 }
   ];
   
-  // Functio: új sor hozzáadása
   function createRow() {
     let name = prompt("Add meg a nevet:");
     let height = prompt("Add meg a magasságot:");
@@ -16,7 +15,6 @@ let data = [
     }
   }
   
-  // Functio: táblázat renderelése
   function renderTable() {
     const tbody = document.querySelector("#dataTable tbody");
     tbody.innerHTML = "";
@@ -36,13 +34,11 @@ let data = [
     });
   }
   
-  // Functio: sor törlése
   function deleteRow(index) {
     data.splice(index, 1);
     renderTable();
   }
   
-  // Functio: sor frissítése
   function updateRow(index) {
     const name = prompt("Add meg az új nevet:", data[index].name);
     const height = prompt("Add meg az új magasságot:", data[index].height);
@@ -54,7 +50,6 @@ let data = [
     }
   }
   
-  // Functio: keresés táblázatban
   function searchTable() {
     const searchValue = document.querySelector("#searchInput").value.toLowerCase();
     const rows = document.querySelectorAll("#dataTable tbody tr");
@@ -69,7 +64,6 @@ let data = [
     });
   }
   
-  // Functio: táblázat rendezése oszlopok szerint
   function sortTable(columnIndex) {
     const rows = Array.from(document.querySelectorAll("#dataTable tbody tr"));
     const sortedRows = rows.sort((rowA, rowB) => {
